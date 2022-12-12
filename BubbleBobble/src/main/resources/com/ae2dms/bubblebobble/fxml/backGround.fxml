@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.ae2dms.bubblebobble.controller.backGroundController">
+    <children>
+        <ImageView fitHeight="442.0" fitWidth="858.0" layoutY="253.0" pickOnBounds="true">
+            <image>
+                <Image url="@../image/guide.jpg"/>
+            </image>
+        </ImageView>
+        <Button fx:id="back" graphicTextGap="1.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedBack"
+                onMouseEntered="#onMouseEnteredBack" onMouseExited="#onMouseExitedBack" prefHeight="81.0"
+                prefWidth="169.0" style="-fx-background-color: black;" text="back" textFill="#f2f2f2">
+            <font>
+                <Font name="Snap ITC" size="44.0"/>
+            </font>
+        </Button>
+        <GridPane layoutX="147.0" layoutY="100.0" prefHeight="426.0" prefWidth="494.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="427.2" minWidth="10.0" prefWidth="426.40001220703124"/>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="282.20001220703125" minWidth="10.0"
+                                   prefWidth="67.99998779296874"/>
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+            </rowConstraints>
+            <children>
+                <CheckBox fx:id="snowField" mnemonicParsing="false" onAction="#clickSnowFiled"
+                          GridPane.columnIndex="1"/>
+                <CheckBox fx:id="prairie" mnemonicParsing="false" onAction="#clickPrairie" GridPane.columnIndex="1"
+                          GridPane.rowIndex="1"/>
+                <Label graphicTextGap="1.0" prefHeight="45.0" prefWidth="250.0" text="SnowField" textFill="#058cb9">
+                    <font>
+                        <Font name="Snap ITC" size="38.0"/>
+                    </font>
+                </Label>
+                <Label graphicTextGap="1.0" prefHeight="51.0" prefWidth="181.0" text="Prairie" textFill="#01ec05"
+                       GridPane.rowIndex="1">
+                    <font>
+                        <Font name="Snap ITC" size="38.0"/>
+                    </font>
+                </Label>
+                <Label graphicTextGap="1.0" prefHeight="45.0" prefWidth="250.0" text="Volcano" textFill="#ff2a00"
+                       GridPane.rowIndex="2">
+                    <font>
+                        <Font name="Snap ITC" size="38.0"/>
+                    </font>
+                </Label>
+                <Label graphicTextGap="1.0" prefHeight="51.0" prefWidth="125.0" text="Rock" textFill="#717381"
+                       GridPane.rowIndex="3">
+                    <font>
+                        <Font name="Snap ITC" size="38.0"/>
+                    </font>
+                </Label>
+                <Label graphicTextGap="1.0" prefHeight="45.0" prefWidth="250.0" text="Woods" textFill="#736726"
+                       GridPane.rowIndex="4">
+                    <font>
+                        <Font name="Snap ITC" size="38.0"/>
+                    </font>
+                </Label>
+                <Label graphicTextGap="1.0" prefHeight="51.0" prefWidth="159.0" text="Desert" textFill="#d7b300"
+                       GridPane.rowIndex="5">
+                    <font>
+                        <Font name="Snap ITC" size="38.0"/>
+                    </font>
+                </Label>
+                <Label graphicTextGap="1.0" prefHeight="51.0" prefWidth="152.0" text="Ocean" textFill="#00efff"
+                       GridPane.rowIndex="6">
+                    <font>
+                        <Font name="Snap ITC" size="38.0"/>
+                    </font>
+                </Label>
+                <Label graphicTextGap="1.0" prefHeight="51.0" prefWidth="220.0" text="Fantasy" textFill="#c700ff"
+                       GridPane.rowIndex="7">
+                    <font>
+                        <Font name="Snap ITC" size="38.0"/>
+                    </font>
+                </Label>
+                <CheckBox fx:id="rock" mnemonicParsing="false" onAction="#clickRock" GridPane.columnIndex="1"
+                          GridPane.rowIndex="3"/>
+                <CheckBox fx:id="volcano" mnemonicParsing="false" onAction="#clickVolcano" GridPane.columnIndex="1"
+                          GridPane.rowIndex="2"/>
+                <CheckBox fx:id="woods" mnemonicParsing="false" onAction="#clickWoods" GridPane.columnIndex="1"
+                          GridPane.rowIndex="4"/>
+                <CheckBox fx:id="desert" mnemonicParsing="false" onAction="#clickDesert" GridPane.columnIndex="1"
+                          GridPane.rowIndex="5"/>
+                <CheckBox fx:id="ocean" mnemonicParsing="false" onAction="#clickOcean" GridPane.columnIndex="1"
+                          GridPane.rowIndex="6"/>
+                <CheckBox fx:id="fantasy" mnemonicParsing="false" onAction="#clickFantasy" GridPane.columnIndex="1"
+                          GridPane.rowIndex="7"/>
+            </children>
+        </GridPane>
+        <Text fill="#fbff00" layoutX="213.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Background"
+              wrappingWidth="431.1999267578126">
+            <font>
+                <Font name="Snap ITC" size="59.0"/>
+            </font>
+        </Text>
+
+    </children>
+</AnchorPane>

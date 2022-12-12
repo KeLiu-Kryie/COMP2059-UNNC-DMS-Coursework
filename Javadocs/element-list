@@ -1,0 +1,14 @@
+module:com.ae2dms.bubblebobble
+com.ae2dms.bubblebobble
+com.ae2dms.bubblebobble.controller
+com.ae2dms.bubblebobble.factory
+com.ae2dms.bubblebobble.marks
+com.ae2dms.bubblebobble.model
+com.ae2dms.bubblebobble.model.removable.fruit
+com.ae2dms.bubblebobble.model.removable.hero
+com.ae2dms.bubblebobble.model.removable.hostile
+com.ae2dms.bubblebobble.model.removable.hostile.state
+com.ae2dms.bubblebobble.model.removable.hostile.strategy
+com.ae2dms.bubblebobble.model.removable.projectile
+com.ae2dms.bubblebobble.model.unremovable.environment
+com.ae2dms.bubblebobble.sound

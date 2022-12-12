@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="680.0" prefWidth="850.0" style="-fx-background-color: black;"
+            xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.ae2dms.bubblebobble.controller.overController">
+    <children>
+        <ImageView fitHeight="500.0" fitWidth="858.0" layoutY="-1.0" pickOnBounds="true">
+            <image>
+                <Image url="@../image/gameOver.jpg"/>
+            </image>
+        </ImageView>
+        <Button fx:id="back" graphicTextGap="1.0" mnemonicParsing="false" onMouseClicked="#onMouseClickedback"
+                onMouseEntered="#onMouseEnteredback" onMouseExited="#onMouseExitedback" prefHeight="59.0"
+                prefWidth="166.0" style="-fx-background-color: black;" text="Back" textFill="#fcfcfc">
+            <font>
+                <Font name="Snap ITC" size="41.0"/>
+            </font>
+        </Button>
+        <Button fx:id="play_again" layoutX="547.0" layoutY="-1.0" mnemonicParsing="false"
+                onMouseClicked="#onMouseClickedplay" onMouseEntered="#onMouseEnteredplay"
+                onMouseExited="#onMouseExitedplay" prefHeight="82.0" prefWidth="310.0"
+                style="-fx-background-color: black;" text="Play Again" textFill="WHITE">
+            <font>
+                <Font name="Snap ITC" size="41.0"/>
+            </font>
+        </Button>
+        <Label fx:id="score" layoutX="255.0" layoutY="102.0" prefHeight="52.0" prefWidth="521.0" text="score:"
+               textFill="#fbff00">
+            <font>
+                <Font name="Snap ITC" size="40.0"/>
+            </font>
+        </Label>
+        <Label fx:id="one" layoutX="299.0" layoutY="366.0" prefHeight="60.0" prefWidth="434.0" text="1"
+               textFill="#fff600">
+            <font>
+                <Font name="Snap ITC" size="40.0"/>
+            </font>
+        </Label>
+        <Label fx:id="two" layoutX="291.0" layoutY="426.0" prefHeight="60.0" prefWidth="491.0" text="2"
+               textFill="#fff600">
+            <font>
+                <Font name="Snap ITC" size="40.0"/>
+            </font>
+        </Label>
+        <Label fx:id="three" layoutX="291.0" layoutY="486.0" prefHeight="60.0" prefWidth="481.0" text="3"
+               textFill="#fff600">
+            <font>
+                <Font name="Snap ITC" size="40.0"/>
+            </font>
+        </Label>
+        <Label fx:id="four" layoutX="291.0" layoutY="546.0" prefHeight="60.0" prefWidth="504.0" text="4"
+               textFill="#fff600">
+            <font>
+                <Font name="Snap ITC" size="40.0"/>
+            </font>
+        </Label>
+        <Label fx:id="five" layoutX="292.0" layoutY="606.0" prefHeight="60.0" prefWidth="459.0" text="5"
+               textFill="#fff600">
+            <font>
+                <Font name="Snap ITC" size="40.0"/>
+            </font>
+        </Label>
+        <Label layoutX="235.0" layoutY="299.0" prefHeight="60.0" prefWidth="402.0" text="High Score List"
+               textFill="RED">
+            <font>
+                <Font name="Snap ITC" size="40.0"/>
+            </font>
+        </Label>
+        <Label fx:id="record" layoutX="247.0" layoutY="52.0" prefHeight="52.0" prefWidth="377.0" textFill="RED">
+            <font>
+                <Font name="Snap ITC" size="43.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
